@@ -1,0 +1,14 @@
+# actividad 1
+
+tenemos tres archivos
+- 52383 caracteres 
+- 3434 datos enteros 
+- 5433 puntos flotantes
+
+
+entonces tendriamos 
+datos enteros 3434 * 4 que son los bytes que ocupa = 13726 Bytes 
+puntos flotantes 5433 * 4 = 21732 bytes 
+
+en general sumando todos los bytes tendriamos 87851Bytes 
+que serian 85.7919922KB
