@@ -1,5 +1,5 @@
 # actividad 2
-![link de ayudas](../prog-2025-2-10am-unidad2-JulianG26-08/image/Captura%20de%20pantalla%202025-07-31%20104545.png)
+![link de ayudas](./image/Captura%20de%20pantalla%202025-07-31%20104545.png)
 
 # ejercicio 2
 
