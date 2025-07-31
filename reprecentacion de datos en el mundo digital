@@ -12,3 +12,15 @@ puntos flotantes 5433 * 4 = 21732 bytes
 
 en general sumando todos los bytes tendriamos 87851Bytes 
 que serian 85.7919922KB
+
+1. Explica, en tus propias palabras, por qué es necesario que las computadoras representen los datos en binario.
+-   Las computadoras están formadas por millones de pequeños interruptores electrónicos que pueden estar encendidos (1) o apagados (0). Esta naturaleza física hace que el sistema binario sea ideal para representar y manipular información digital de manera confiable y eficiente.
+
+2. Convierte el número binario 10011011 a decimal y a hexadecimal.
+- primero miramos cuantos numeros tenemos que son 8 entonces multiplicamos 2 y elevando al exponente los numeros que tenemos menos 1 porque tambien cntamos el 0 seria = 2⁷=128, 2⁶=64, 2⁵=32, 2⁴=16, 2³=8, 2²=4, 2¹=2, 2⁰=1. despues Multiplicamos cada bit de 10011011₂ por su peso y sumamos:1×128 + 0×64 + 0×32 + 1×16 + 1×8 + 0×4 + 1×2 + 1×1 = 128 + 0 + 0 + 16 + 8 + 0 + 2 + 1. y Sumando: 128 + 16 + 8 + 2 + 1 = 155.
+
+3. Investiga y describe cómo se representa una imagen en formato PNG en el disco.
+Una imagen PNG se guarda como un archivo binario estructurado que Identifica el archivo como PNG con 8 bytes fijos al inicio. 
+
+4. Analiza la siguiente situación: ¿Qué sucede si intentas almacenar un número mayor al que puede representar un byte (por ejemplo, 300)? ¿Cómo lo maneja Python?
+segun chat gpt : Un byte solo puede almacenar valores entre 0 y 255, por lo que intentar guardar un número mayor, como 300, provoca un error si se usa una estructura que limita el tamaño, como bytes o bytearray. Sin embargo, Python permite trabajar con enteros grandes sin problema usando su tipo int, que se adapta dinámicamente al tamaño del número. Para representar números mayores en formato binario (como 300), es necesario usar más de un byte, por ejemplo con to_bytes(2, 'big'), lo que permite almacenarlo correctamente en 2 bytes.
