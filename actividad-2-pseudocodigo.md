@@ -16,3 +16,95 @@ Escribir ID, Total, Promedio
 Fin
 ```
 ![link imagen de diagrama](./image/Diagrama%20sueldos%20julian.drawio.png)
+
+
+
+# tarea
+
+```
+leer N1, N2, N3, N4, N5, N6, N7
+
+```
+
+# CLASE MARTES 5 DE AGOSTO
+# ejercicio 3
+
+Realice un algoritmo para determinar cuánto se debe pagar por equis cantidad de lápices considerando que si son 1000 o más el costo es de $85 cada uno; de lo contrario, el precio es de $90. Represéntelo con el pseudocódigo y el diagrama de flujo.
+
+| variables | tipo | comentario|
+|-----------|------| -------|
+| lapices   | entrada| cantidad de lapices|
+|valor unidad | intermedia| valor intermedio de cada lapiz|
+| precio    | salida|precio total de los lapices|
+|85 , 90 | constantes|no cambian|
+## pseudocodigo
+```
+inicio 
+leer lapices 
+si lapices >= 1000:
+    valor_unidad = 85
+Si no 
+    valor_unidad = 90
+Fin si 
+Precio = lapices * valor_unidad
+Escribir "el valor total es:", precio
+Fin
+```
+![link imagen de diagrama de flujo](./image/ejercicio%203.png)
+
+
+# ejercicio 4
+Un almacén de ropa tiene una promoción: por compras superiores a $250 000 se les aplicará un descuento de 15%, de caso contrario, sólo se aplicará un 8% de descuento. Realice un algoritmo para determinar el precio final que debe pagar una persona por comprar en dicho almacén y de cuánto es el descuento que obtendrá. Represéntelo mediante el pseudocódigo y el diagrama de flujo.
+
+| variables | tipo | comentario|
+|-----------|------| -------|
+| total_compra| entrada| valor de la compra |
+|descuento |salida | valor a pagar|
+|precio final | salida | valor a pagar |
+| 15% , 8% , $250000| constante | descuento y valor limite|
+
+```
+inicio 
+leer total_compra 
+si total_compra > 250000:
+    descuento = total_compra * 0.15
+si no 
+    descuento = total_compra * 0.08
+fin si 
+precio_final = total_compra - descuento 
+escribir "valor a pagar:" , precio_final 
+fin
+```
+
+
+# ejercicio 5 
+El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: si son 100 alumnos o más, el costo por cada alumno es de $65.00; de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos de 30, el costo de la renta del autobús es de $4000.00, sin importar el número de alumnos.
+
+| variables | tipo | comentario|
+|-----------|------| -------|
+| alumnos | entrada | numero de alumnos que van al viaje |
+|costo_alumno , Precio_total| salida | precio por alumno que va y la suma todal de ellos |
+|$65.00 , $70.00 , $95.00 , $4000.00 | constante | valor dependiendo del numero de alumnos |
+|alumnos >=100 ,50 a 99 alumnos , 30 a 49 alumnos , alumnos < 30 | rango ||
+#pseudocodigo
+```
+inicio 
+leer alumnos 
+si alumnos >= 100:
+    costo_alumnos = 65
+si no 
+    si alumnos >= 50 
+        costo_alumnos = 70
+    si no 
+        si alumnos >= 30 
+            costo_alumnos = 95
+        si no 
+            costo_total = 4000
+            costo_alumnos = costo_total/alumnos 
+        fin si 
+    fin si 
+fin si 
+costo_total = costo_alumnos * alumnos 
+escribir: costo_total , costo_alumnos
+fin 
+``` 
