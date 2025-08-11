@@ -62,7 +62,7 @@ Un almacén de ropa tiene una promoción: por compras superiores a $250 000 se l
 |descuento |salida | valor a pagar|
 |precio final | salida | valor a pagar |
 | 15% , 8% , $250000| constante | descuento y valor limite|
-
+## peseudocodigo
 ```
 inicio 
 leer total_compra 
@@ -86,7 +86,7 @@ El director de una escuela está organizando un viaje de estudios, y requiere de
 |costo_alumno , Precio_total| salida | precio por alumno que va y la suma todal de ellos |
 |$65.00 , $70.00 , $95.00 , $4000.00 | constante | valor dependiendo del numero de alumnos |
 |alumnos >=100 ,50 a 99 alumnos , 30 a 49 alumnos , alumnos < 30 | rango ||
-#pseudocodigo
+## pseudocodigo
 ```
 inicio 
 leer alumnos 
@@ -108,3 +108,39 @@ costo_total = costo_alumnos * alumnos
 escribir: costo_total , costo_alumnos
 fin 
 ``` 
+
+
+# TAREA
+averiguar cunatos años tiene una persona con su dia mes y año a la fecha actual 
+
+| variables | tipo | comentario|
+|-----------|------| -------|
+|fecha_nacimiento, fecha_actual|entrada| dia mes y año|
+|12 meses= un año, 1~31 dias= mes | rango| tener en cuenta para saber si esta adecuadamente los años|
+|años| salida | resta de la fecha_nacimiento y fecha_atual|
+## peseudocodigo
+
+```
+inicio 
+leer año_nacimiento, mes_nacimiento, dia_nacimiento
+leer año_actual, mes_actual, dia_actual
+años = año_actual - año_nacimiento
+si mes_nacimiento < mes_actual
+    años
+si no 
+    si mes_nacimiento = mes_actual
+        si dia_nacimiento <= dia_actual
+            años 
+        si no 
+            años = años - 1
+        fin si
+    si no 
+        años = años - 1
+    fin si 
+fin si 
+escrbir: "su edad es", años
+fin
+```
+
+![link a tarea](./image/tarea%202.drawio.png)
+
