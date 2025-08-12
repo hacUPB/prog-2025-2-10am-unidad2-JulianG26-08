@@ -144,3 +144,34 @@ fin
 
 ![link a tarea](./image/tarea%202.drawio.png)
 
+# ejercicios de bucles 
+
+## ejercicio 1
+
+se requiere un algotitmo para determinar, N cantidades cuantas son cero, cuantas son menores a cero, cuantas son iguales a cero y uantas son mayores a cero 
+realice un diagrama de flujo y pseudocodigo representarlo y utilizando el coclo apropiado.
+
+```
+inicio 
+leer N
+ceros = 0
+mayores = 0
+menores = 0
+
+mientras N > 0 :
+    leer cant
+    si cant > 0 : 
+        mayores = mayores + 1 
+    si no 
+        si cant = 0:
+            ceros = ceros + 1
+        si no 
+            menores = menores + 1
+        fin si 
+    fin si 
+    N = N - 1
+fin mientras
+mostras ceros, mayores, menores 
+fin
+```
+
