@@ -175,3 +175,17 @@ mostras ceros, mayores, menores
 fin
 ```
 
+## ejercicio 2
+calcular el factorialde un numero entero ingresado por el usuario.
+
+```
+inicio 
+leer N 
+fact = 1 
+mientras N > 0 
+    fact = fact * N
+    N = N - 1 
+fin mientras 
+mostrar fact
+fin
+```
